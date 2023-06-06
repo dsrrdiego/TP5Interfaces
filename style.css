@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    font-size: 500%;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    width:100%;
+    height: 50px;
+    z-index:10;
+    background-color: rgba(21, 27, 33, 0.298);
+    align-items: center;;
+}
+#fondoHeader{
+    position:fixed;
+    background-color: rgb(148, 40, 67);
+    width :100%;
+    height: 50px;
+}
+
+#logo{
+    background-color: rgba(255, 0, 0, 0.092);
+}
+ul{
+    display:flex;
+    list-style: none;
+    width:150%;
+    
+    justify-content: space-around;
+}
+a{
+    color:red;
+}
+a:hover{
+    color:blue;
+}
+#boton{
+    height: 80%;
+    background-color: blue;
+    position: absolute;
+    left: 95%;
+}
+
+
+@keyframes imagenHeader{
+    75%{
+        transform: rotate(-1deg);
+        /* width:100%; */
+        
+    }
+}
+#imagenHeader{
+    
+    background: url("ejemplo.png") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    height: 600px;
+    animation: imagenHeader 5s infinite linear;
+    /* width:100%; */
+    z-index:5;
+    
+}
+#textoHeader{
+    position: absolute;
+    top:100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50%;
+    justify-content: space-around;
+}
+
+#principal{
+    margin-top:30px;
+    display:flex;
+    
+}
+#fotos{
+    width:65%;
+}
+#mision{
+    width:35%;
+
+}
+#columnas{
+    display:flex;
+}
+
+#fotos div{
+    background-size: contain;
+    height: 100px;
+    background-repeat: no-repeat;
+    position:relative;
+    z-index:-10;
+    border-radius: 7px;
+
+}
+#foto1{
+    left:50%;
+    background: url("ejemplo.png");
+    animation: horizontal 15s infinite;
+}
+#foto2{
+    background: url("ejemplo.png");
+    left:50%;
+    animation: vertical 15s infinite;
+}
+#foto3{
+    background: url("ejemplo.png");
+    animation: horizontal 30s infinite;
+}
+#foto4{
+    background: url("ejemplo.png");
+    left:50%;
+    animation: vertical 30s infinite;
+}
+#foto5{
+    background: url("ejemplo.png");
+    animation: horizontal 45s infinite;
+}
+#foto6{
+    left:50%;
+    background: url("ejemplo.png");
+    animation: vertical 45s infinite;
+}
+@keyframes vertical {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top:-20%;
+    }
+    100%{
+        top: 0%;
+    }
+    
+}
+@keyframes horizontal {
+    0%{
+        left: 50%;
+    }
+    50%{
+        left:0%;
+    }
+    100%{
+        left: 50%;
+    }
+    
+}
+#dibujitos{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color: rgba(0, 0, 255, 0.227);
+
+
+}
+#seccionDos{
+    background-color: blanchedalmond;
+}
